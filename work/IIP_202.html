@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css js inject -->
+    <link rel="stylesheet" href="../css/biz2/reset.css">
+    <link rel="stylesheet" href="../css/biz2/common.css">
+    <link rel="stylesheet" href="../css/biz2/layout.css">
+    <link rel="stylesheet" href="../css/biz2/main.css">
+    <link rel="stylesheet" href="../css/biz2/style.css">
+    <link rel="stylesheet" href="../css/biz2/swiper-bundle.min.css">
+    <script src="../js/biz2/jquery.1.8.2.min.js"></script>
+    <script src="../js/biz2/swiper-bundle.min.js"></script>
+    <script src="../js/biz2/script.js"></script>
+    <title>울산광역시 평생교육이용권</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-area">
+            <a href="IMP_002.html">
+                <img src="../images/biz2/header_logo_2.png" alt="울산광역시">
+            </a>
+        </div>
+        <div class="menu-area">
+            <!-- 로그인 시 -->
+            <a href="#" class="log-info">
+                <img src="../images/biz2/ico/ico_loguser.svg" alt="로그인 유저 아이콘, 로그아웃 아이콘">
+                <span class="log-info-txt">로그아웃</span>
+            </a>
+            <button class="open-btn">
+                <span class="blind">메뉴 열기</span>
+            </button>
+            <div class="menu-box">
+                <ul class="link-group login">
+                    <li>
+                        <span class="tit">사업안내</span>
+                        <div class="link-item">
+                            <a href="IGP_001.html">평생교육이용권이란?</a>
+                            <a href="IGP_001.html">평생교육이용권 사용하기</a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="tit">이용권 사용기관</span>
+                        <div class="link-item">
+                            <a href="ILP_001.html">사용기관 신청</a>
+                            <a href="IIP_800.html">사용기관 신청 현황</a>
+                            <a class="hidden" href="#">이용권 사용내역</a>
+                            <a href="#">교육결과 관리</a>
+                            <a class="hidden" href="#">교육과정 정보</a>
+                            <a class="hidden" href="#">학습자 정보</a>
+                            <a href="IIP_400.html">기관 정보 수정</a>
+                            <a class="hidden" href="#">사용기관 연수</a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="tit">게시판</span>
+                        <div class="link-item">
+                            <a href="IIP_001.html">공지사항</a>
+                            <a href="INP_100.html">자료실</a>
+                            <a href="INP_200.html">자주하는질문</a>
+                            <a href="INP_200.html">질의응답</a>
+                        </div>
+                    </li>
+                </ul>
+                <button class="close-btn">
+                    <span class="blind">메뉴 닫기</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="top-location">
+        <div class="top-location-area wrap">
+            <span class="home"><span class="blind">홈</span></span>
+            <div class="location-box">
+                <span class="arrow">이용권 사용기관</span>
+                <span class="arrow">교육과정 정보</span>
+                <span class="arrow">교육과정 정보 상세</span>
+                <span class="arrow">교육과정 정보 수정</span>
+            </div>
+        </div>
+    </div>
+    <div class="container wrap">
+        <div class="page-header">
+            <h2 class="page-header-tit">교육과정 정보</h2>
+        </div>
+        <div class="contents">
+            <div class="top-info-group">
+                <h3>강좌정보</h3>
+                <div class="flex-ac">
+                    <div>
+                        <small><em class="color-red">*</em> 는 필수사항입니다.</small>
+                        <p class="color-blue">최초 등록일시 : 2024-09-12 11:12:11, 최종 수정일시 : 2024-12-12 12:11:12</p>                        
+                    </div>
+                    <button type="button" class="btns bg-blue">강좌 불러오기</button>
+                </div>
+            </div>
+            <div class="com-write-table">
+                <table>
+                    <caption>교육과정 강좌정보 수정 테이블</caption>
+                    <colgroup>
+                        <col style="width: 200px;">
+                        <col>
+                        <col style="width: 200px;">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th class="txt-l">
+                                <label for="a" class="must-type">강좌명</label>
+                            </th>
+                            <td colspan="3">
+                                <input type="text" id="a" placeholder="평생교육강좌">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="txt-l">사용자 정보 제공</th>
+                            <td>
+                                <div class="chk-box">
+                                    <input type="checkbox" id="chk-1">
+                                    <label for="chk-1">
+                                        체크시 [사용처 안내] 메뉴에 ‘사용자 안내 강좌명’으로 강좌 정보가
+                                        안내됩니다.
+                                    </label>
+                                </div>
+                            </td>   
+                            <th class="txt-l">
+                                <label class="must-type">강좌 시작일/<br>종료일</label>
+                            </th>
+                            <td class="period">
+                                <div class="flex-ac">
+                                    <input type="date" id="srch03" class="date"> 
+                                    <span class="dash">~</span> 
+                                    <input type="date" class="date">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="txt-l">
+                                <label for="b">사용자 안내<br>강좌명</label>
+                            </th>
+                            <td colspan="3">
+                                <input type="text" id="b">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="txt-l">
+                                <label for="c" class="must-type">강좌분류</label>
+                            </th>
+                            <td class="select-wrap">
+                                <select id="c">
+                                    <option value="none">선택하세요</option>
+                                    <option value="1">2</option>
+                                    <option value="1">3</option>
+                                    <option value="1">4</option>
+                                </select>
+                                <button type="button" class="btns layer-btn" onclick="$('[data-pop=pop-2]').show();">상세보기</button>
+                            </td>
+                            <th class="txt-l">자주쓰는 강좌</th>
+                            <td>
+                                <div class="chk-box">
+                                    <input type="checkbox" id="chk-2">
+                                    <label for="chk-2">
+                                        체크시 [교육과정 등록] 메뉴에 ‘자주쓰는 강좌’로 안내됩니다.
+                                    </label>
+                                </div>
+                            </td>
+                            <!-- 임시 스크립트 20241124 이민혁 -->
+                            <script>
+                                /* 해당 요소 선택 시 popup show */
+                                $('#chk-2').change(function(){
+                                    if($(this).is(":checked")){
+                                        $('[data-pop=pop-1]').show();
+                                    } else {
+                                        $('[data-pop=pop-1]').hide();
+                                    }
+                                })
+                            </script>
+                        </tr>
+                        <tr>
+                            <th class="txt-l">
+                                <label for="d" class="must-type">교육방법</label>
+                            </th>
+                            <td colspan="3">
+                                <select id="d" class="fixed-value">
+                                    <option value="none">선택하세요</option>
+                                    <option value="1">2</option>
+                                    <option value="1">3</option>
+                                    <option value="1">4</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="txt-l">학점은행제<br>평가인정여부</th>
+                            <td>
+                                <div class="radio-box">
+                                    <input type="radio" id="chk-yes" name="confirmation" value="yes">
+                                    <label for="chk-yes">인정</label>
+                                    <input type="radio" id="chk-no" name="confirmation" value="no">
+                                    <label for="chk-no">미인정</label>
+                                </div>
+                            </td>
+                            <th class="txt-l">평생학습계좌제<br>평가인정여부 </th>
+                            <td>
+                                <div class="radio-box">
+                                    <input type="radio" id="chk-yes2" name="confirmation2" value="yes">
+                                    <label for="chk-yes2">인정</label>
+                                    <input type="radio" id="chk-no2" name="confirmation2" value="no">
+                                    <label for="chk-no2">미인정</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="txt-l">
+                                <label for="e" class="must-type">강좌관리자명</label>
+                            </th>
+                            <td>
+                                <input type="text" id="e">
+                            </td>
+                            <th class="txt-l">
+                                <label for="f">분반</label>
+                            </th>
+                            <td>
+                                <input type="text" id="f">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="txt-l">
+                                <label for="g" class="must-type">총교육일수/<br>시간/차수</label>
+                            </th>
+                            <td>
+                                <div class="input-wrap">
+                                    <input type="text" id="g">
+                                    <select>
+                                        <option value="none">일</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>                                      
+                                <p class="add-note">예시(일) : 30/30.5</p>                                    
+                            </td>
+                            <th class="txt-l">
+                                <label for="h" class="must-type">교육시간(회당)</label>
+                            </th>
+                            <td>
+                                <input type="text" id="h">
+                                <p class="add-note">(예시(시간) :1/0.5)</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="txt-l must-type">
+                                <label for="i">수강료</label>
+                            </th>
+                            <td>
+                                <input type="text" id="i" class="won"> 원
+                            </td>
+                            <th class="txt-l">
+                                <label for="j">교재비</label>
+                            </th>
+                            <td>
+                                <input type="text" id="j" class="won"> 원
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="txt-l">
+                                <label for="k">교육추가(기간)</label>
+                            </th>
+                            <td colspan="3"><input type="text" id="k"></td>
+                        </tr>
+                        <tr>
+                            <th class="txt-l">
+                                <label for="l">강좌소개</label>
+                            </th>
+                            <td colspan="3">
+                                <textarea id="l"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="txt-l">
+                                <label for="m">교육장소</label>
+                            </th>
+                            <td colspan="3">
+                                <input type="text" id="m">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="top-info-group">
+                    <h3>학습자 정보</h3>
+                </div>
+                <div class="com-view-table">
+                    <table>
+                        <caption>학습자 정보 테이블</caption>
+                        <colgroup>
+                            <col style="width: 20%;">
+                            <col style="width: 20%;">
+                            <col style="width: 20%;">
+                            <col style="width: 20%;">
+                            <col style="width: 20%;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>학습자명</th>
+                                <th>생년월일</th>
+                                <th>출석일수</th>
+                                <th>이수여부</th>
+                                <th>
+                                    <button type="button" class="layer-btn btns bg-blue" onclick="$('[data-pop=pop-3]').show();">추가</button>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="btns-bottom">
+                    <button type="button" class="btn-bd">목록</button>
+                    <button type="button" class="btns">등록</button>
+                </div>
+            </div>                    
+        </div>
+    </div>
+    <footer class="wrap">
+        <div class="info-content">
+            <span class="footer-logo"><span class="blind">평생교육이용권</span></span>
+            <address>
+                <span class="txt"><span>(04520)</span><span>서울특별시 중구 청계천로 14 (무교동77)</span></span>
+                <span class="tel"><span>대표전화</span><span>1600-3005 (평일 09시~18시)</span></span>
+            </address>
+            <select class="ui-select" title="관련 사이트 선택">
+                <option value="#">관련 사이트</option>
+            </select>
+            <div class="link-area">
+                <div class="link-box">
+                    <a href="#">이용약관</a>
+                    <a href="#" class="on">개인정보처리방침</a>
+                    <a href="#">저작권정책</a>
+                    <a href="#">이메일무단수집거부</a>
+                </div>
+                <span class="copy">
+                    COPYRIGHT 2024. NATIONAL INSTITUTE FOR LIFELONG EDUCATION. ALL RIGHTS
+                    RESERVED.
+                </span>
+                <div class="support-box">
+                    <img src="../images/biz2/footer_link_1.png" alt="교육부">
+                    <img src="../images/biz2/footer_link_2.png" alt="국가평생교육진흥원">
+                    <img src="../images/biz2/footer_link_3.png" alt="wa">
+                    <img src="../images/biz2/footer_link_4.png" alt="청렴세상">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="layer-pop" data-pop="pop-1">
+        <div class="layer-content" style="--max-width: 1200px">
+            <div class="layer-scroll">
+                <span class="title">자주쓰는 강좌</span>
+                <div class="info-area">
+                    <div class="table-box">
+                        <div class="com-write-table">
+                            <table>
+                                <caption>자주쓰는 강좌 안내 테이블</caption>
+                                <colgroup>
+                                    <col style="width: 150px;">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>구분</th>
+                                        <td>
+                                            <div class="radio-box">
+                                                <input type="radio" id="chk-ex" name="confirmation" value="yes">
+                                                <label for="chk-ex">자주쓰는 강좌</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="com-view-table">
+                            <table>
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>강좌명</th>
+                                        <th>강좌분류</th>
+                                        <th>교육방법</th>
+                                        <th>
+                                            총교육일수
+                                            <br>
+                                            (총 교육시간)
+                                        </th>
+                                        <th>
+                                            교육시간<br>
+                                            (회당)
+                                        </th>
+                                        <th>수강료</th>
+                                        <th>교재비</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>유럽바리스타 자격증</td>
+                                        <td>시민참여교육</td>
+                                        <td>온라인</td>
+                                        <td>11일</td>
+                                        <td>2</td>
+                                        <td>100,000원</td>
+                                        <td>50,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>유럽바리스타 자격증</td>
+                                        <td>시민참여교육</td>
+                                        <td>온라인</td>
+                                        <td>11일</td>
+                                        <td>2</td>
+                                        <td>100,000원</td>
+                                        <td>50,000원</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="com-paging">
+                        <button class="prev">이전</button>
+                        <button class="on">1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>4</button>
+                        <button>5</button>
+                        <span class="empty">...</span>
+                        <button>120</button>
+                        <button class="next">다음</button>
+                    </div>
+                    <div class="layer-btn-wrap">
+                        <button class="btns" onclick="$('[data-pop=pop-1]').hide();">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="layer-pop" data-pop="pop-2">
+        <div class="layer-content" style="--max-width: 1200px">
+            <div class="layer-scroll">
+                <span class="title">평생교육프로그램 6대 영역별 분류</span>
+                <div class="info-area">
+                    <div class="table-box mg-0">
+                        <div class="com-view-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">대분류</th>
+                                        <th colspan="2">중분류</th>
+                                        <th rowspan="2">프로그램 예시</th>
+                                    </tr>
+                                    <tr>
+                                        <th>6대영역</th>
+                                        <th>정의</th>
+                                        <th>하위영역</th>
+                                        <th class="border-d8-r">정의</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="3">기초문해교육<br>(언어적 기초와 활용)</td>
+                                        <td rowspan="3">한글을 읽고, 쓸 수 있도록 하는 문자해독능력과 생활속에서 직면한 문제를 해결하고 주어진 과업을 수행할 수 있는 문해활용능력을 개발하는 평생교육</td>
+                                        <td>내국인 한글문해 프로그램</td>
+                                        <td>비문해자가 한글을 읽고, 쓸 수 있는 문자해독능력을 도울 체계적으로 지도하는 프로그램</td>
+                                        <td>어르신한글교실, 찾아가는한글교실, 한글교실(초급·중급) 등</td>
+                                    </tr>
+                                    <tr>
+                                        <td>다문화 한글문해 프로그램</td>
+                                        <td>다문화 외국인이 한글을 읽고, 쓸 수 있는 문자해독능력을 갖도록 체계적으로 지도하는 프로그램</td>
+                                        <td>외국인 한글교실, 다문화가족문해교실, 귀화인한국어교육과정 등</td>
+                                    </tr>
+                                    <tr>
+                                        <td>한글생활문해 프로그램</td>
+                                        <td>문자해독 후 한글을 응용하여 직면한 문제를 해결하고 주어진 과업을 수행할 수 있는 기초생활 교육을 지원하는 프로그램</td>
+                                        <td>한글 응용교육, 문해학습자 기초컴퓨터 활용교육, 기초영어교육, 한글인증시험 준비교육과정 등</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="layer-btn-wrap">
+                        <button class="btns" onclick="$('[data-pop=pop-2]').hide();">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

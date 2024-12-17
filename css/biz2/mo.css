@@ -1,0 +1,24 @@
+/****************************************************
+	파일명	: mo.css
+	최초작성자	: 이민혁
+	최초작성일	: 2024-11-23
+	-------------------------------------------------
+	Dec. 모바일 미디어쿼리 정의
+	-------------------------------------------------
+	속성순서    : 레이아웃 > 크기/간격 > 박스모양 > 폰트/정렬 > 기타
+*****************************************************/
+
+/* pc content 1024~1920 */
+@media only screen and (min-width:1024px){
+	.lg-only {display: block;}
+}
+/* Mobile Android */
+@media only screen and (max-width:800px){
+	/* pc content hide */
+	.lg-only {display: none;}
+
+	/* layer popup padding */
+	.layer-pop .layer-content {padding: 0 20px;}
+}
+
+
